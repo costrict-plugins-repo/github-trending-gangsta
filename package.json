@@ -1,0 +1,29 @@
+{
+  "name": "gangsta",
+  "version": "1.13.1",
+  "description": "AI agentic skills framework for spec-driven development",
+  "type": "module",
+  "main": "./.opencode/plugins/gangsta.js",
+  "exports": {
+    ".": "./.opencode/plugins/gangsta.js",
+    "./server": "./.opencode/plugins/gangsta.js",
+    "./package.json": "./package.json"
+  },
+  "author": "Andrey Kucherenko <kucherenko.andrey@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kucherenko/gangsta.git"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "skills",
+    "spec-driven-development",
+    "sdd",
+    "framework"
+  ],
+  "scripts": {
+    "validate": "bash scripts/validate.sh"
+  }
+}

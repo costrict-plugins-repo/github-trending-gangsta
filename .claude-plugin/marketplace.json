@@ -1,0 +1,15 @@
+{
+  "name": "gangsta-marketplace",
+  "description": "Development marketplace for Gangsta framework",
+  "owner": {
+    "name": "Andrey Kucherenko",
+    "email": "kucherenko.andrey@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "gangsta",
+      "version": "1.13.1",
+      "source": "./"
+    }
+  ]
+}

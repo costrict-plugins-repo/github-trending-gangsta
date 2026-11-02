@@ -1,0 +1,19 @@
+# OpenCode 2.x plugin install smoke test.
+#
+# OpenCode 2.x loads plugins through the V2 plugin API (`plugins` config key).
+# The test installs the mounted checkout twice, so the code under test is this
+# checkout rather than GitHub master:
+#   1. "plugins": [{ "package": "/plugin" }]   directory plugin (root index.js)
+#   2. "plugins": ["gangsta@file:/plugin"]      npm package install, resolved
+#      through package.json "exports" exactly like the documented
+#      `opencode plugin add gangsta@git+https://...` flow.
+FROM node:20-bookworm-slim
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends git ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN npm install -g @opencode/cli@2
+
+WORKDIR /plugin
+CMD ["bash", "-eu", "tests/install/run-opencode.sh"]

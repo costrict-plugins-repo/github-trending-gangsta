@@ -1,0 +1,382 @@
+# Changelog
+
+All notable changes to Gangsta are documented here.
+
+This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+
+## [1.13.1](https://github.com/kucherenko/gangsta/compare/gangsta-v1.13.0...gangsta-v1.13.1) (2026-10-27)
+
+
+### ### Documentation
+
+* use gangsta-marketplace in Claude Code install command ([#71](https://github.com/kucherenko/gangsta/issues/71)) ([910fc42](https://github.com/kucherenko/gangsta/commit/910fc42b0a5009e87900e4802227d4706d58309d))
+
+## [1.13.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.12.0...gangsta-v1.13.0) (2026-10-26)
+
+
+### ### Added
+
+* **antigravity:** add Antigravity CLI plugin support ([#69](https://github.com/kucherenko/gangsta/issues/69)) ([3f1e853](https://github.com/kucherenko/gangsta/commit/3f1e853ce1d3821395293b42603bc37d26df74a0)), closes [#58](https://github.com/kucherenko/gangsta/issues/58)
+
+## [1.12.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.11.6...gangsta-v1.12.0) (2026-10-26)
+
+
+### ### Added
+
+* **opencode:** support OpenCode 2.x plugin API alongside 1.x ([#67](https://github.com/kucherenko/gangsta/issues/67)) ([1d3c305](https://github.com/kucherenko/gangsta/commit/1d3c3058eaf2461648515a0c6cb77e4587e4b6bd)), closes [#66](https://github.com/kucherenko/gangsta/issues/66)
+
+## [1.11.6](https://github.com/kucherenko/gangsta/compare/gangsta-v1.11.5...gangsta-v1.11.6) (2026-08-14)
+
+
+### ### Fixed
+
+* **hooks:** add required hookEventName to Claude Code SessionStart output ([#63](https://github.com/kucherenko/gangsta/issues/63)) ([8f26b34](https://github.com/kucherenko/gangsta/commit/8f26b34296c180756553f5a51d634a8008a3b308))
+
+## [1.11.5](https://github.com/kucherenko/gangsta/compare/gangsta-v1.11.4...gangsta-v1.11.5) (2026-07-12)
+
+
+### ### Fixed
+
+* **plugin:** remove duplicate GangstaPlugin export and fix command.paths schema ([38de595](https://github.com/kucherenko/gangsta/commit/38de5958a46e917dd9725cfdae4464130f0f9d1d))
+* **skills:** present choice menus via native selection tool, not plain text ([68ccb61](https://github.com/kucherenko/gangsta/commit/68ccb612d4d981dcbd86b718d95bf89e744b08ae))
+
+## [1.11.4](https://github.com/kucherenko/gangsta/compare/gangsta-v1.11.3...gangsta-v1.11.4) (2026-07-12)
+
+
+### ### Fixed
+
+* **plugin:** remove stale commands array referencing deleted autonomous-mode files ([b7c5426](https://github.com/kucherenko/gangsta/commit/b7c5426c2cac18caa68a915d413b15630db556a7))
+
+## [1.11.3](https://github.com/kucherenko/gangsta/compare/gangsta-v1.11.2...gangsta-v1.11.3) (2026-07-12)
+
+
+### ### Documentation
+
+* **skills:** document plan, variant, and mid-task interaction controls for all platform tool mappings ([438f661](https://github.com/kucherenko/gangsta/commit/438f661a76b4e4026f298b992821e952fc5b635e))
+
+## [1.11.2](https://github.com/kucherenko/gangsta/compare/gangsta-v1.11.1...gangsta-v1.11.2) (2026-05-12)
+
+
+### ### Fixed
+
+* **plugin:** remove $schema key rejected by Claude Code manifest validator ([#56](https://github.com/kucherenko/gangsta/issues/56)) ([b7131c8](https://github.com/kucherenko/gangsta/commit/b7131c843d1ad8e9733bab4b3348cb3ae311df07))
+
+## [1.11.1](https://github.com/kucherenko/gangsta/compare/gangsta-v1.11.0...gangsta-v1.11.1) (2026-05-12)
+
+
+### ### Fixed
+
+* **release:** auto-sync .claude-plugin versions via release-please extra-files ([#54](https://github.com/kucherenko/gangsta/issues/54)) ([3bd0ab5](https://github.com/kucherenko/gangsta/commit/3bd0ab5c9d77586ec73e9ec682d58d6dd6f50a9e))
+
+## [1.11.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.10.4...gangsta-v1.11.0) (2026-05-12)
+
+
+### ### Added
+
+* **ci:** restore explicit commands manifest entry and add per-agent install tests ([#52](https://github.com/kucherenko/gangsta/issues/52)) ([dbd42e5](https://github.com/kucherenko/gangsta/commit/dbd42e5282f1dcd5ce9dc6e414af5617ab18995a))
+
+## [1.10.4](https://github.com/kucherenko/gangsta/compare/gangsta-v1.10.3...gangsta-v1.10.4) (2026-05-12)
+
+
+### ### Fixed
+
+* **plugin:** remove invalid commands field from manifest ([#50](https://github.com/kucherenko/gangsta/issues/50)) ([b344559](https://github.com/kucherenko/gangsta/commit/b3445593517aa403cd450ad785745fc2e8f92c79))
+
+## [1.10.3](https://github.com/kucherenko/gangsta/compare/gangsta-v1.10.2...gangsta-v1.10.3) (2026-05-11)
+
+
+### ### Fixed
+
+* **security:** resolve Snyk/Socket audit flags across five skills ([#48](https://github.com/kucherenko/gangsta/issues/48)) ([f414015](https://github.com/kucherenko/gangsta/commit/f414015c4019d6db1310a0410aa2e572efcc5f61))
+
+## [1.10.2](https://github.com/kucherenko/gangsta/compare/gangsta-v1.10.1...gangsta-v1.10.2) (2026-05-10)
+
+
+### ### Fixed
+
+* **opencode:** remove invalid config hook mutations causing 400 on startup ([#46](https://github.com/kucherenko/gangsta/issues/46)) ([2d87d55](https://github.com/kucherenko/gangsta/commit/2d87d5500e22f9b30264ad300c09c46f856dc8e1)), closes [#43](https://github.com/kucherenko/gangsta/issues/43)
+
+## [1.10.1](https://github.com/kucherenko/gangsta/compare/gangsta-v1.10.0...gangsta-v1.10.1) (2026-05-10)
+
+
+### ### Fixed
+
+* **plugin:** use spec-compliant string array for commands field ([#44](https://github.com/kucherenko/gangsta/issues/44)) ([3f48404](https://github.com/kucherenko/gangsta/commit/3f48404854432c3424d5bc7cef9ffaad6e189ae0)), closes [#42](https://github.com/kucherenko/gangsta/issues/42)
+
+## [1.10.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.9.0...gangsta-v1.10.0) (2026-05-01)
+
+
+### ### Added
+
+* **pi-dev:** add native pi.dev coding agent extension ([#40](https://github.com/kucherenko/gangsta/issues/40)) ([1bf349e](https://github.com/kucherenko/gangsta/commit/1bf349e707df01697a7bb412b8ce9db7476e2fa3))
+
+## [1.8.1](https://github.com/kucherenko/gangsta/compare/gangsta-v1.8.0...gangsta-v1.8.1) (2026-04-28)
+
+
+### ### Fixed
+
+* **autonomous-mode:** replace vague cross-references with explicit don-proxy gates at every human question point ([#36](https://github.com/kucherenko/gangsta/issues/36)) ([7880d2d](https://github.com/kucherenko/gangsta/commit/7880d2d37e727abdeb8dc85bceb7d437f2b0c149))
+
+## [1.8.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.7.4...gangsta-v1.8.0) (2026-04-28)
+
+
+### ### Added
+
+* **skills:** autonomous-mode + don-proxy skills, constitution seed (PR1/2) ([#30](https://github.com/kucherenko/gangsta/issues/30)) ([#32](https://github.com/kucherenko/gangsta/issues/32)) ([eb694a5](https://github.com/kucherenko/gangsta/commit/eb694a53c22eaff2a35f9bc0097c9bc054b36ab0))
+
+## [1.7.4](https://github.com/kucherenko/gangsta/compare/gangsta-v1.7.3...gangsta-v1.7.4) (2026-04-27)
+
+
+### ### Fixed
+
+* **opencode:** add missing default export to GangstaPlugin ([ca2dfd7](https://github.com/kucherenko/gangsta/commit/ca2dfd74d384b7adfe904b0f265f8724340976fa))
+* **reconnaissance:** enforce The Sit-Down as a mandatory non-skippable gate ([#29](https://github.com/kucherenko/gangsta/issues/29)) ([fad5830](https://github.com/kucherenko/gangsta/commit/fad5830ba2f98e09d0c6699eabfe8fec5f4c26c2))
+
+
+### ### Documentation
+
+* **opencode:** remove manual bun add step — OpenCode auto-installs plugins ([ee897db](https://github.com/kucherenko/gangsta/commit/ee897dbfb1e8d72a5d2b1b41f72d5c90d4cedc5e))
+
+## [1.7.3](https://github.com/kucherenko/gangsta/compare/gangsta-v1.7.2...gangsta-v1.7.3) (2026-04-26)
+
+
+### ### Fixed
+
+* **opencode:** fix plugin export format — must be a function not an object ([#26](https://github.com/kucherenko/gangsta/issues/26)) ([864d670](https://github.com/kucherenko/gangsta/commit/864d670367635f0f1c1f22b9143b33fae336b80d))
+
+## [1.7.2](https://github.com/kucherenko/gangsta/compare/gangsta-v1.7.1...gangsta-v1.7.2) (2026-04-26)
+
+
+### ### Documentation
+
+* **opencode:** rewrite INSTALL.md with git-based install, tool mapping, agents ([#24](https://github.com/kucherenko/gangsta/issues/24)) ([315306a](https://github.com/kucherenko/gangsta/commit/315306ac0176de537154167a653ee471e4172fc1))
+
+## [1.7.1](https://github.com/kucherenko/gangsta/compare/gangsta-v1.7.0...gangsta-v1.7.1) (2026-04-25)
+
+
+### ### Fixed
+
+* **reconnaissance:** keep proceed menu in chat only, not in dossier file ([#22](https://github.com/kucherenko/gangsta/issues/22)) ([6bb5cda](https://github.com/kucherenko/gangsta/commit/6bb5cda69406cf404fa2de335e51502ff3f415ae))
+
+## [1.7.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.6.0...gangsta-v1.7.0) (2026-04-24)
+
+
+### ### Added
+
+* **the-hit:** auto-advance to laundering on completion ([#20](https://github.com/kucherenko/gangsta/issues/20)) ([4d04849](https://github.com/kucherenko/gangsta/commit/4d048497e368bbd8ab8fb818636c0c9054fd2055))
+
+## [1.6.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.5.0...gangsta-v1.6.0) (2026-04-24)
+
+
+### ### Added
+
+* sit-down approach proposals ([#18](https://github.com/kucherenko/gangsta/issues/18)) ([505e6ca](https://github.com/kucherenko/gangsta/commit/505e6ca0900d00491c9ee0622b668f7147c0da21))
+
+## [1.5.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.4.0...gangsta-v1.5.0) (2026-04-24)
+
+
+### ### Added
+
+* **the-sit-down:** add 2-3 approach proposals before contract drafting ([#16](https://github.com/kucherenko/gangsta/issues/16)) ([27beba4](https://github.com/kucherenko/gangsta/commit/27beba42145f7a16c27ed8cb0c50c343b12e648b))
+
+## [1.4.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.3.0...gangsta-v1.4.0) (2026-04-24)
+
+
+### ### Added
+
+* **reconnaissance:** add explicit numbered proceed menu after dossier presentation ([#14](https://github.com/kucherenko/gangsta/issues/14)) ([ada7958](https://github.com/kucherenko/gangsta/commit/ada7958cea3216db07c4f0f0ba373d9d377bcab0))
+
+## [1.3.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.2.5...gangsta-v1.3.0) (2026-04-23)
+
+
+### ### Added
+
+* auto-advance to resource-development on Don approval in the-sit-down ([1efc584](https://github.com/kucherenko/gangsta/commit/1efc584))
+
+## [1.2.5](https://github.com/kucherenko/gangsta/compare/gangsta-v1.2.4...gangsta-v1.2.5) (2026-04-19)
+
+
+### ### Documentation
+
+* align README pipeline table with site — Execution, The Delivery, add skills and gates ([67b5a0a](https://github.com/kucherenko/gangsta/commit/67b5a0a412cfa461c9e4294ec2b34bf62523c131))
+
+## [1.2.4](https://github.com/kucherenko/gangsta/compare/gangsta-v1.2.3...gangsta-v1.2.4) (2026-04-19)
+
+
+### ### Documentation
+
+* align linked docs with updated Gangsta Agents terminology ([6b17ce3](https://github.com/kucherenko/gangsta/commit/6b17ce30601365fc4b0dc0915210aa122791bdc6))
+* update README to use Gangsta Agents terminology throughout ([175b182](https://github.com/kucherenko/gangsta/commit/175b18212d2a40ca8658d5578a0b648044bce930))
+
+## [1.2.3](https://github.com/kucherenko/gangsta/compare/gangsta-v1.2.2...gangsta-v1.2.3) (2026-04-19)
+
+
+### ### Fixed
+
+* use named gangsta agents as subagent_type instead of built-ins ([94a09d7](https://github.com/kucherenko/gangsta/commit/94a09d7c82e7a5c23c8a79f3135499f972a3b2ea))
+
+
+### ### Changed
+
+* align skill terminology with updated glossary ([30f5b92](https://github.com/kucherenko/gangsta/commit/30f5b924be3a3911212eaec09e6f837aedc1d6f7))
+
+## [1.2.2](https://github.com/kucherenko/gangsta/compare/gangsta-v1.2.1...gangsta-v1.2.2) (2026-04-18)
+
+
+### ### Fixed
+
+* specify correct subagent_type in all dispatch-capable skills ([16fa741](https://github.com/kucherenko/gangsta/commit/16fa741e4b06fa917ba2dfd6d060e22f38e4a59a))
+
+## [1.2.1](https://github.com/kucherenko/gangsta/compare/gangsta-v1.2.0...gangsta-v1.2.1) (2026-04-18)
+
+
+### ### Fixed
+
+* correct OpenCode subagent types and question tool schema in the-grilling ([1de3560](https://github.com/kucherenko/gangsta/commit/1de3560539213e3f1d4871fcc3397c47e2e6ec35))
+
+## [1.2.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.1.3...gangsta-v1.2.0) (2026-04-18)
+
+
+### ### Added
+
+* add initial idea critique to devils-advocate in Round 1 ([b28e2d5](https://github.com/kucherenko/gangsta/commit/b28e2d5b163d6c5663b0271de3164e512b5e0ae3))
+
+## [1.1.3](https://github.com/kucherenko/gangsta/compare/gangsta-v1.1.2...gangsta-v1.1.3) (2026-04-17)
+
+
+### ### Documentation
+
+* make OpenCode and Codex install instructions copyable ([a51dbb9](https://github.com/kucherenko/gangsta/commit/a51dbb94b72a838b53ec9b047023a9eb40f36495))
+
+## [1.1.2](https://github.com/kucherenko/gangsta/compare/gangsta-v1.1.1...gangsta-v1.1.2) (2026-04-17)
+
+
+### ### Fixed
+
+* inject bootstrap via system.transform instead of messages.transform ([53a0924](https://github.com/kucherenko/gangsta/commit/53a092453e3d37ab947ac2c372bab24f97cde805))
+
+## [1.1.1](https://github.com/kucherenko/gangsta/compare/gangsta-v1.1.0...gangsta-v1.1.1) (2026-04-16)
+
+
+### ### Fixed
+
+* update Copilot plugin install command to use gangsta-marketplace registry ([b064328](https://github.com/kucherenko/gangsta/commit/b0643284de8be287646ae267bc8b3fc243e00012))
+
+
+### ### Documentation
+
+* add Claude Code installation instructions ([761f831](https://github.com/kucherenko/gangsta/commit/761f8317651ebe69a4aa424c76f5f1d1358f1537))
+* add GitHub Copilot installation instructions ([e755c25](https://github.com/kucherenko/gangsta/commit/e755c2590c1a8038e57e463882061034259d6791))
+* add logo to top of README ([578a3c5](https://github.com/kucherenko/gangsta/commit/578a3c5e4d09728ca7a94bfe3eb0f980b7ce9ed0))
+
+## [1.1.0](https://github.com/kucherenko/gangsta/compare/gangsta-v1.0.0...gangsta-v1.1.0) (2026-04-14)
+
+
+### ### Added
+
+* add gangsta framework design spec and implementation plan ([5e45e32](https://github.com/kucherenko/gangsta/commit/5e45e324ec6bb88429400d82c5d6eaec892cb426))
+* add laundering skill — Phase 6 verification, integration, and ledger update ([b0f6820](https://github.com/kucherenko/gangsta/commit/b0f68200371ead1f707321ad80742efcfaf893f6))
+* add local validation script and restructure docs ([#1](https://github.com/kucherenko/gangsta/issues/1)) ([1f3a282](https://github.com/kucherenko/gangsta/commit/1f3a2820713980434bb1063491efae08287016d8))
+* add named agent definitions — soldier, devils-advocate, proposer, synthesizer, associate ([c3d3fd2](https://github.com/kucherenko/gangsta/commit/c3d3fd23fae48ff84d7c3abac8c98f810a2506bc))
+* add omerta skill — governance foundation for all gangsta operations ([3ba6a98](https://github.com/kucherenko/gangsta/commit/3ba6a98a6f04fcb66f9a44c7f85fdbf3ae929970))
+* add OpenCode plugin and cross-platform bootstrap hooks ([db69d2b](https://github.com/kucherenko/gangsta/commit/db69d2ba599fa42850245c019bb8b96077c6cbf7))
+* add platform manifests for Claude Code, Cursor, Codex, and Gemini ([65ab164](https://github.com/kucherenko/gangsta/commit/65ab164cc919724d37ebd130b2ba57d92656548d))
+* add README and contributor guidelines ([d45aa28](https://github.com/kucherenko/gangsta/commit/d45aa2861756e6af199bf4e26a586fd541898db9))
+* add reconnaissance skill — Phase 1 intel gathering ([8a0353b](https://github.com/kucherenko/gangsta/commit/8a0353bf4e8407a415d24e02fb0c99335aef3844))
+* add resource-development skill — Phase 4 task decomposition and war planning ([42e2207](https://github.com/kucherenko/gangsta/commit/42e2207ad356f44d8c4ef3d6ba2b8308d2bab086))
+* add the-capo skill — domain territory commander template ([18ce5ce](https://github.com/kucherenko/gangsta/commit/18ce5ce0c2c39e62b9a2e0fde5ae33241a07e1db))
+* add the-consigliere skill — impartial architectural advisor ([604e6e3](https://github.com/kucherenko/gangsta/commit/604e6e319e310ef45197d48c48985b5d5a47cb5f))
+* add the-don skill — bootstrap orchestrator for the Borgata ([a9808a1](https://github.com/kucherenko/gangsta/commit/a9808a1058e94a428e99d92775075b5d3bebcc6a))
+* add the-grilling skill — adversarial MAD protocol with round limits ([227e007](https://github.com/kucherenko/gangsta/commit/227e0075a37cc390aa17d322cc224f61e895db31))
+* add the-hit skill — Phase 5 parallel execution with TDD enforcement ([9f92053](https://github.com/kucherenko/gangsta/commit/9f92053f4616ac180b5bc3cf10633546ef91535c))
+* add the-ledger skill — institutional memory for insights and fails ([2d7049b](https://github.com/kucherenko/gangsta/commit/2d7049b7ff05d34d17a087910fc147ad6071faf7))
+* add the-sit-down skill — Phase 3 contract drafting with code prohibition ([4ffc1f4](https://github.com/kucherenko/gangsta/commit/4ffc1f4be90a4eace1685a4c303021e6b886516f))
+* add the-underboss skill — task decomposition and resource management ([732a3a2](https://github.com/kucherenko/gangsta/commit/732a3a28fa786ff3dff426fa94da0a318372418c))
+* **the-grilling:** enforce one-question-at-a-time for Don interactions ([277a105](https://github.com/kucherenko/gangsta/commit/277a105050e127ba76112c1ede9ffc0598b01f84))
+
+
+### ### Fixed
+
+* update repository URLs from placeholder to kucherenko/gangsta ([0e75b91](https://github.com/kucherenko/gangsta/commit/0e75b91efb43ae061a9b87f6ec08dae4af7da535))
+* use awk for POSIX-compatible YAML frontmatter stripping in session-start hook ([bbb06fc](https://github.com/kucherenko/gangsta/commit/bbb06fc15992c43a71bfc90846e408ad377ba0ce))
+
+
+### ### Changed
+
+* merge the-don into using-gangsta, add proactive memory capture ([97e5a2c](https://github.com/kucherenko/gangsta/commit/97e5a2ccc254d278da4d4a49c6fc02c7666c02a7))
+* replace phase number labels with phase names across all skills ([7bb5456](https://github.com/kucherenko/gangsta/commit/7bb54562ebf7c94073a013748187c75032824fc8))
+
+## [Unreleased]
+
+## [1.0.0] - 2026-04-13 — Framework Maturity
+
+### Added
+- `using-gangsta` — new meta-bootstrap skill that serves as the single entry point for all intent routing through the Borgata hierarchy
+- Platform tool mapping references for OpenCode, Copilot CLI, Codex, and Gemini CLI (`references/` directory)
+- Proactive memory capture protocol — the orchestrator now automatically offers to save insights or fails to the Ledger after significant exchanges
+- Formal framework design spec and implementation plan documents
+
+### Changed
+- `the-don` merged into `using-gangsta` — orchestration is now unified under a single bootstrap skill instead of two overlapping roles
+- Heist document structure reorganized — all artifacts now live under `docs/gangsta/<heist>/` with `recon/`, `plans/`, and `checkpoints/` subdirectories for clarity
+- Phase labels changed from numbers to names across all skills (e.g., "Phase 1" → "Reconnaissance") for readability
+- The Grilling: Don now interacts one question at a time per round instead of receiving a bulk summary — tighter adversarial loop
+- OpenCode plugin updated to server API
+
+### Fixed
+- Checkpoint path references updated across all skills to match the new `docs/gangsta/<heist>/checkpoints/` structure
+
+## [0.3.0] - 2026-04-13 — Software Dev Skills
+
+### Added
+- `interrogation-debugging` skill — systematic root-cause interrogation protocol before any fix attempt; prevents premature patching
+- `drill-tdd` skill — enforces Red-Green-Refactor with a hard rule: no production code without a failing test first
+- `safehouse-worktrees` skill — sets up isolated git worktrees so feature work never contaminates the main workspace
+- `audit-review` skill — dispatches `the-inspector` subagent for independent code review after implementation
+- `receiving-orders` skill — processes code review feedback with technical rigor, distinguishing valid orders from stronzate
+- `sweep-verification` skill — evidence-before-assertions gate that must pass before any "done" claim is made
+- `exit-strategy` skill — guides clean branch integration, PR creation, and safehouse cleanup after a Heist
+- `the-inspector` agent — independent code review subagent definition with standing audit authority
+- Cross-references wired between all new skills and the core Heist pipeline (the-hit, laundering, the-consigliere)
+- Software Development Skills section added to README
+
+### Fixed
+- Repository URLs corrected from placeholder to `kucherenko/gangsta`
+- Installation instructions updated to fetch-and-follow pattern
+
+## [0.2.0] - 2026-04-13 — Cross-Platform
+
+### Added
+- OpenCode plugin (`opencode/plugins/gangsta.js`) with session-start hooks for automatic framework bootstrapping
+- Platform manifests for Claude Code (`.claude-plugin/`), Cursor (`.cursor-plugin/`), Codex (`.codex/`), and Gemini CLI (`gemini-extension.json`)
+- `README.md` — framework philosophy, full Heist Pipeline overview, Borgata Hierarchy table, and installation instructions for all supported platforms
+- `AGENTS.md` — contributor guidelines including zero-dependency mandate, skill change requirements, and Omerta law compliance rules
+
+### Fixed
+- Session-start hook rewritten to use `awk` for POSIX-compatible YAML frontmatter stripping (replaces non-portable bash workaround)
+
+## [0.1.0] - 2026-04-13 — The Foundation
+
+### Added
+- `omerta` skill — the governance foundation; defines the Omerta Laws that govern all agent behavior (anti-hallucination, authorization, spec supremacy, etc.)
+- `the-ledger` skill — institutional memory system for Insights, Fails, and the Project Constitution
+- `the-consigliere` skill — impartial architectural advisor operating outside the chain of command with authority to invoke truth checks
+- `the-underboss` skill — COO-level task decomposition, territory allocation, and resource management
+- `the-capo` skill — domain territory commander template for orchestrating Soldier subagents
+- `reconnaissance` skill — Phase 1 intel gathering protocol with structured Dossier format
+- `the-grilling` skill — adversarial Multi-Agent Debate (Proposer vs Devils-Advocate) with bounded round limits and Don participation
+- `the-sit-down` skill — Phase 3 formal contract drafting with strict code prohibition (spec before implementation)
+- `resource-development` skill — Phase 4 task decomposition into Work Packages with territory allocation and token budgets
+- `the-hit` skill — Phase 5 parallel Soldier execution with TDD enforcement and escalation protocols
+- `laundering` skill — Phase 6 verification, integration, Consigliere review, and Ledger update
+- Named agent definitions: `soldier`, `devils-advocate`, `proposer`, `synthesizer`, `associate`
+- Full 6-phase Heist Pipeline: Reconnaissance → The Grilling → The Sit-Down → Resource Development → The Hit → Laundering
+- Borgata hierarchy: Don → Consigliere → Underboss → Capo → Soldiers/Associates
+- Project scaffold with `package.json` (MIT license, zero dependencies)
+
+[Unreleased]: https://github.com/kucherenko/gangsta/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/kucherenko/gangsta/compare/v0.3.0...v1.0.0
+[0.3.0]: https://github.com/kucherenko/gangsta/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/kucherenko/gangsta/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/kucherenko/gangsta/releases/tag/v0.1.0

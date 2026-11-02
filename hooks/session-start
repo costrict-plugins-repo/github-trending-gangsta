@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Gangsta session-start hook
+# Reads using-gangsta skill and injects it as bootstrap context
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+SKILL_FILE="$ROOT_DIR/skills/using-gangsta/SKILL.md"
+
+if [ ! -f "$SKILL_FILE" ]; then
+  echo '{}' 
+  exit 0
+fi
+
+# Read skill content, strip YAML frontmatter
+CONTENT=$(awk 'BEGIN{fm=0} /^---$/{fm++; next} fm>=2{print}' "$SKILL_FILE")
+
+# Wrap in importance tags
+BOOTSTRAP="<EXTREMELY_IMPORTANT>
+${CONTENT}
+</EXTREMELY_IMPORTANT>"
+
+# Escape for JSON (awk only — python3/jq are not guaranteed on minimal hosts)
+ESCAPED=$(printf '%s' "$BOOTSTRAP" | awk '
+BEGIN { ORS = ""; print "\"" }
+NR > 1 { print "\\n" }
+{
+  gsub(/\\/, "\\\\")
+  gsub(/"/, "\\\"")
+  gsub(/\t/, "\\t")
+  gsub(/\r/, "\\r")
+  print
+}
+END { print "\"" }
+')
+
+# Detect platform and output in correct format
+if [ -n "${CLAUDE_PLUGIN_ROOT:-}" ]; then
+  # Claude Code — hookSpecificOutput requires hookEventName as its discriminator;
+  # without it the envelope fails validation and additionalContext is discarded.
+  printf '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":%s}}' "$ESCAPED"
+elif [ -n "${CURSOR_PLUGIN_ROOT:-}" ]; then
+  # Cursor
+  printf '{"additional_context":%s}' "$ESCAPED"
+elif [ -n "${COPILOT_CLI:-}" ]; then
+  # GitHub Copilot CLI
+  printf '{"additionalContext":%s}' "$ESCAPED"
+else
+  # Generic fallback
+  printf '{"additionalContext":%s}' "$ESCAPED"
+fi
